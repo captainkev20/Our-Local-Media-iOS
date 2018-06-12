@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    let tableTitles = ["CALENDAR","COUPONS","TAPPED INTO CRAFTED","DIRECTORY","SPORTS"]
-    let tableDescriptions = ["All Regional Events   Arts/Culture", "Great deals on local fare!", "See local brews!", "See directory", "Catch a local game!"]
+    let tableTitles = ["CALENDAR","COUPONS","TAPPED INTO CRAFT","DIRECTORY","SPORTS"]
+    let tableDescriptions = ["All Regional Events   Arts/Culture", "Great deals on local fare!", "Breweries, Wineries and Distillers", "Everything the Triad has to offer", "Catch a local ball game..."]
     let segueIdentifier = ["calendarSegue"]
     let tableIcons = ["\u{e904}","\u{e90f}","\u{e910}","\u{e903}","\u{e905}"]
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     // Number of main menu items to create
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,6 +46,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return cell
     }
+    
+        
     
     // Determine section user has selected
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -78,6 +82,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         default: break
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.collectionView.frame.width - 10, height: 175)
     }
     
 

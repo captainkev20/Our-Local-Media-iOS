@@ -49,7 +49,11 @@ class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         myIndex = indexPath.row
-        performSegue(withIdentifier: "directoryWebViewSegue", sender: self)
+        //performSegue(withIdentifier: "directoryWebViewSegue", sender: self)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.directoryCollectionView.frame.width - 10, height: 53)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

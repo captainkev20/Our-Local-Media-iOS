@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SportsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SportsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var sportsCollectionView: UICollectionView!
     
@@ -41,7 +41,7 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         myIndex = indexPath.row
-        performSegue(withIdentifier: "sportsSegue", sender: self)
+        //performSegue(withIdentifier: "sportsSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,6 +52,10 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.sportsCollectionView.frame.width - 10, height: 53)
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()

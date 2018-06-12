@@ -53,6 +53,10 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         performSegue(withIdentifier: "webViewSegue", sender: self)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.collectionView.frame.width - 40, height: 53)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "webViewSegue" {
             if let indexPath = collectionView?.indexPathsForSelectedItems?.first {
