@@ -9,11 +9,18 @@
 import UIKit
 import WebKit
 
-class CouponViewController: UIViewController, UIWebViewDelegate {
+class CouponViewController: UIViewController, WKUIDelegate {
 
     @IBOutlet weak var couponWebView: WKWebView!
     
-    var links: String = "http://4info.org/mobiledirectory?mode=businesses&amp;categories=216058"
+    var links: String = "http://ourlocalsearch.com/mobiledirectory?mode=businesses&categories=216058"
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        couponWebView = WKWebView(frame: .zero, configuration: webConfiguration)
+        couponWebView.uiDelegate = self
+        view = couponWebView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +36,5 @@ class CouponViewController: UIViewController, UIWebViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

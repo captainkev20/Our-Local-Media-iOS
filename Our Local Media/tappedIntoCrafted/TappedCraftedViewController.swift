@@ -10,13 +10,18 @@ import UIKit
 import WebKit
 
 
-class TappedCraftedViewController: UIViewController {
+class TappedCraftedViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var tappedCraftedWebView: WKWebView!
     
-    var links: String = "http://4info.org/tapped-into-craft"
+    var links: String = "http://ourlocalsearch.com/tapped-into-craft"
 
-
+    override func loadView() {
+        super.loadView()
+        self.tappedCraftedWebView = WKWebView()
+        self.view = self.tappedCraftedWebView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,16 +36,5 @@ class TappedCraftedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

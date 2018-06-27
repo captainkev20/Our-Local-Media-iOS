@@ -13,9 +13,9 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var sportsCollectionView: UICollectionView!
     
     let sportsListItems = ["NFL Schedule","NHL Schedule","NCAA Sports","NBA Schedule","MLB Schedule"]
-    
     let sportsLinks = ["http://www.nfl.com/schedules/2018/REG1","https://www.nhl.com/schedule","https://www.ncaa.com","http://stats.nba.com/schedule","http://m.mlb.com/schedule"]
     
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sportsListItems.count
     }
@@ -23,6 +23,7 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let sportsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "sportsCell", for: indexPath) as! SportsCollectionViewCell
         
+            
         sportsCell.sportsLabel.text = sportsListItems[indexPath.row]
         sportsCell.clipsToBounds = true
         sportsCell.layer.cornerRadius = 10.0
@@ -41,7 +42,6 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         myIndex = indexPath.row
-        //performSegue(withIdentifier: "sportsSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -54,12 +54,11 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.sportsCollectionView.frame.width - 10, height: 53)
+        return CGSize(width: self.sportsCollectionView.bounds.size.width - 10, height: 53)
         }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -67,16 +66,4 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

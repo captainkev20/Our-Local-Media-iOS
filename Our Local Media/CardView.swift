@@ -6,26 +6,24 @@
 //  Copyright © 2018 Kevin Walker. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-@IBDesignable class CardView: UIView {
-
-    @IBInspectable var cornerRadius: CGFloat = 10
-    
-    @IBInspectable var shadowOffsetWidth: Int = 0
-    @IBInspectable var shadowOffsetHeight: Int = 3
-    @IBInspectable var shadowColor: UIColor? = UIColor.black
-    @IBInspectable var shadowOpacity: Float = 0.5
-    
-    override func layoutSubviews() {
-        layer.cornerRadius = cornerRadius
-        let shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius)
+extension UIView {
+    func cardViewLayout(cell: UICollectionViewCell) -> UICollectionViewCell {
+        //cell.sportsLabel.text = sportsListItems[indexPath.row]
+        cell.clipsToBounds = true
+        cell.layer.cornerRadius = 10.0
+        cell.layer.borderWidth = 0.2
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.masksToBounds = true
+        cell.layer.shadowColor = UIColor.lightGray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 3.0)
+        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.layer.cornerRadius).cgPath
         
-        layer.masksToBounds = false
-        layer.shadowColor = shadowColor?.cgColor
-        layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
-        layer.shadowOpacity = shadowOpacity
-        layer.shadowPath = shadowPath.cgPath
+        return cell
     }
-
 }
