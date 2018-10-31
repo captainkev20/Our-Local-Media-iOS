@@ -9,28 +9,34 @@
 import UIKit
 import WebKit
 
-class CouponViewController: UIViewController, WKUIDelegate {
+class CouponViewController: UIViewController, UIWebViewDelegate {
 
-    @IBOutlet weak var couponWebView: WKWebView!
+    
+    @IBOutlet weak var couponWebView: UIWebView!
     
     var links: String = "http://ourlocalsearch.com/mobiledirectory?mode=businesses&categories=216058"
     
-    override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        couponWebView = WKWebView(frame: .zero, configuration: webConfiguration)
-        couponWebView.uiDelegate = self
-        view = couponWebView
-    }
+    //override func loadView() {
+    //    super.loadView()
+    //    self.couponWebView = WKWebView()
+    //    self.view = self.couponWebView
+    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let myURL = URL(string: links)
         let myRequest = URLRequest(url: myURL!)
-        couponWebView.load(myRequest)
+        couponWebView.loadRequest(myRequest)
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

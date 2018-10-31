@@ -12,22 +12,24 @@ import WebKit
 
 class TappedCraftedViewController: UIViewController, UIWebViewDelegate {
     
-    @IBOutlet weak var tappedCraftedWebView: WKWebView!
+    
+    @IBOutlet weak var tappedWebView: UIWebView!
     
     var links: String = "http://ourlocalsearch.com/tapped-into-craft"
 
-    override func loadView() {
-        super.loadView()
-        self.tappedCraftedWebView = WKWebView()
-        self.view = self.tappedCraftedWebView
-    }
+    //override func loadView() {
+    //    super.loadView()
+    //    self.tappedCraftedWebView = WKWebView()
+    //    self.view = self.tappedCraftedWebView
+    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let myURL = URL(string: links)
         let myRequest = URLRequest(url: myURL!)
-        tappedCraftedWebView.load(myRequest)
+        self.automaticallyAdjustsScrollViewInsets = false
+        tappedWebView.loadRequest(myRequest)
 
         // Do any additional setup after loading the view.
     }
