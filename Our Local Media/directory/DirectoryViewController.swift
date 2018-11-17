@@ -1,19 +1,12 @@
-//
-//  DirectoryViewController.swift
-//  Our Local Media
-//
-//  Created by Kevin Walker on 6/7/18.
-//  Copyright © 2018 Kevin Walker. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
 
 
 class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var directoryCollectionView: UICollectionView!
-    
+        
     let directoryListItems =
         ["All Businesses"
             ,"Coupons"
@@ -43,23 +36,52 @@ class DirectoryViewController: UIViewController, UICollectionViewDelegate, UICol
         directoryCell.directorySubTopicLabel.text = directoryListItems[indexPath.row]
         directoryCell.directoryIcon.font = UIFont(name: "icomoon", size: 26.0)
         directoryCell.directoryIcon.text = directoryIcons[indexPath.row]
-        directoryCell.clipsToBounds = true
-        directoryCell.layer.cornerRadius = 10.0
-        directoryCell.layer.borderWidth = 0.2
-        directoryCell.layer.borderColor = UIColor.lightGray.cgColor
-        directoryCell.layer.masksToBounds = false
-        directoryCell.layer.shadowColor = UIColor.lightGray.cgColor
-        directoryCell.layer.shadowOffset = CGSize(width: 0, height: 3.0)
-        directoryCell.layer.shadowRadius = 2.0
-        directoryCell.layer.shadowOpacity = 0.5
-        directoryCell.layer.masksToBounds = false
-        directoryCell.layer.shadowPath = UIBezierPath(roundedRect: directoryCell.bounds, cornerRadius: directoryCell.layer.cornerRadius).cgPath
+        
+        CardViewHelper.cardView(cell: directoryCell)
         
         return directoryCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         myIndex = indexPath.row
+        
+        switch indexPath.row {
+        case 0:
+            FIRAnalytics.logEvent(withName: "directory_all_businesses", parameters: nil)
+        case 1:
+            FIRAnalytics.logEvent(withName: "directory_coupons", parameters: nil)
+            
+        case 2:
+            FIRAnalytics.logEvent(withName: "directory_dining", parameters: nil)
+            
+        case 3:
+            FIRAnalytics.logEvent(withName: "directory_nightlife", parameters: nil)
+            
+        case 4:
+            FIRAnalytics.logEvent(withName: "directory_tourism", parameters: nil)
+            
+        case 5:
+            FIRAnalytics.logEvent(withName: "directory_shopping", parameters: nil)
+            
+        case 6:
+            FIRAnalytics.logEvent(withName: "directory_arts", parameters: nil)
+            
+        case 7:
+            FIRAnalytics.logEvent(withName: "directory_automotive", parameters: nil)
+            
+        case 8:
+            FIRAnalytics.logEvent(withName: "directory_fashion", parameters: nil)
+            
+        case 9:
+            FIRAnalytics.logEvent(withName: "directory_nails_and_skin", parameters: nil)
+            
+        case 10:
+            FIRAnalytics.logEvent(withName: "directory_property_repair", parameters: nil)
+            
+            
+        default: break
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

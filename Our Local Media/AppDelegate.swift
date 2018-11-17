@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,21 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let navigationBarAppearace = UINavigationBar.appearance()
-        //let backButton = UIImage(named: "backButton")
-        //let backButtonImage = backButton?.stretchableImage(withLeftCapWidth: 0, topCapHeight: 5)
-        //barButtonAppearance.setBackButtonBackgroundImage(backButton, for: .normal, barMetrics: .default)
-        
-        //UINavigationBar.appearance().backIndicatorImage = UIImage(named: "backButton")
-        //UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "backButton")
-        //UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 5.0, vertical: -60.0), for: .default)
-
-
-        // Removes default Back text
-        //UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, 1.5), for: UIBarMetrics.default)
-        
         navigationBarAppearace.barTintColor = UIColor(red: 0.59, green: 0.02, blue: 0.02, alpha: 1.0)
         navigationBarAppearace.tintColor = UIColor.white
         
+        FIRApp.configure()
         
         return true
     }

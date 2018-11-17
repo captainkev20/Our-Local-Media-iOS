@@ -1,12 +1,5 @@
-//
-//  CalendarViewController.swift
-//  Our Local Media
-//
-//  Created by Kevin Walker on 5/14/18.
-//  Copyright © 2018 Kevin Walker. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
 var myIndex = 0
 
@@ -30,23 +23,57 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         calendarCell.calendarSubtopicLabel.text = calendarListItems[indexPath.row]
         calendarCell.iconLabel.font = UIFont(name: "icomoon", size: 26.0)
         calendarCell.iconLabel.text = calendarIcons[indexPath.row]
-        calendarCell.clipsToBounds = true
-        calendarCell.layer.cornerRadius = 10.0
-        calendarCell.layer.borderWidth = 0.2
-        calendarCell.layer.borderColor = UIColor.lightGray.cgColor
-        calendarCell.layer.masksToBounds = false
-        calendarCell.layer.shadowColor = UIColor.lightGray.cgColor
-        calendarCell.layer.shadowOffset = CGSize(width: 0, height: 3.0)
-        calendarCell.layer.shadowRadius = 2.0
-        calendarCell.layer.shadowOpacity = 0.5
-        calendarCell.layer.masksToBounds = false
-        calendarCell.layer.shadowPath = UIBezierPath(roundedRect: calendarCell.bounds, cornerRadius: calendarCell.layer.cornerRadius).cgPath
+        
+        CardViewHelper.cardView(cell: calendarCell)
         
         return calendarCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         myIndex = indexPath.row
+        
+        switch indexPath.row {
+        case 0:
+            FIRAnalytics.logEvent(withName: "calendar_all_regional_events", parameters: nil)
+        case 1:
+            FIRAnalytics.logEvent(withName: "calendar_arts_and_culture", parameters: nil)
+
+        case 2:
+            FIRAnalytics.logEvent(withName: "calendar_business_networking", parameters: nil)
+
+        case 3:
+            FIRAnalytics.logEvent(withName: "calendar_community_and_family", parameters: nil)
+
+        case 4:
+            FIRAnalytics.logEvent(withName: "calendar_festivals", parameters: nil)
+
+        case 5:
+            FIRAnalytics.logEvent(withName: "calendar_sports_and_recreation", parameters: nil)
+
+        case 6:
+            FIRAnalytics.logEvent(withName: "calendar_wine_brew_spirits", parameters: nil)
+
+        case 7:
+            FIRAnalytics.logEvent(withName: "calendar_food_drink_specials", parameters: nil)
+
+        case 8:
+            FIRAnalytics.logEvent(withName: "calendar_food_trucks", parameters: nil)
+
+        case 9:
+            FIRAnalytics.logEvent(withName: "calendar_nightlife", parameters: nil)
+
+        case 10:
+            FIRAnalytics.logEvent(withName: "calendar_live_music", parameters: nil)
+
+        case 11:
+            FIRAnalytics.logEvent(withName: "calendar_karaoke_and_dj", parameters: nil)
+
+        case 12:
+            FIRAnalytics.logEvent(withName: "calendar_post_an_event", parameters: nil)
+
+        default: break
+
+        }
         performSegue(withIdentifier: "webViewSegue", sender: self)
     }
     

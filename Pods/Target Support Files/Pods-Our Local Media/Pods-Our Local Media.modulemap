@@ -1,0 +1,6 @@
+framework module Pods_Our_Local_Media {
+  umbrella header "Pods-Our Local Media-umbrella.h"
+
+  export *
+  module * { export * }
+}

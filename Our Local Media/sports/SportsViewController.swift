@@ -1,12 +1,5 @@
-//
-//  SportsViewController.swift
-//  Our Local Media
-//
-//  Created by Kevin Walker on 6/7/18.
-//  Copyright © 2018 Kevin Walker. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
 class SportsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -42,6 +35,24 @@ class SportsViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         myIndex = indexPath.row
+        
+        switch indexPath.row {
+        case 0:
+            FIRAnalytics.logEvent(withName: "sports_nfl_schedule", parameters: nil)
+        case 1:
+            FIRAnalytics.logEvent(withName: "sports_nhl_schedule", parameters: nil)
+            
+        case 2:
+            FIRAnalytics.logEvent(withName: "sports_ncaa_sports", parameters: nil)
+            
+        case 3:
+            FIRAnalytics.logEvent(withName: "sports_nba_schedule", parameters: nil)
+            
+        case 4:
+            FIRAnalytics.logEvent(withName: "sports_mlb_schedule", parameters: nil)
+            
+        default: break
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
