@@ -3,17 +3,10 @@ import WebKit
 
 class SportsWebPageViewController: UIViewController, UIWebViewDelegate {
 
-    
     @IBOutlet weak var sportsWebView: UIWebView!
     
     var links: String = "http://336events.spingo.com/mobile/events?sections=&amp;radius_miles=100"
-    
-    //override func loadView() {
-    //    super.loadView()
-    //    self.sportsWebView = WKWebView()
-    //    self.view = self.sportsWebView
-    //}
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -1,19 +1,11 @@
 import UIKit
 import WebKit
 
-
 class TappedCraftedViewController: UIViewController, UIWebViewDelegate {
-    
     
     @IBOutlet weak var tappedWebView: UIWebView!
     
     var links: String = "http://ourlocalsearch.com/tapped-into-craft"
-
-    //override func loadView() {
-    //    super.loadView()
-    //    self.tappedCraftedWebView = WKWebView()
-    //    self.view = self.tappedCraftedWebView
-    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
