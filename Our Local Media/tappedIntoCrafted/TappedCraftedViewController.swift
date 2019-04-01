@@ -5,7 +5,7 @@ class TappedCraftedViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var tappedWebView: UIWebView!
     
-    var links: String = "http://ourlocalsearch.com/tapped-into-craft"
+    var links: String = Constants.TappedIntoCraftedURLs.TappedIntoCraftedURL
     
     override func viewDidLoad() {
         super.viewDidLoad()

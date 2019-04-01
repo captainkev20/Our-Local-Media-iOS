@@ -5,7 +5,7 @@ class CouponViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var couponWebView: UIWebView!
     
-    var links: String = "http://ourlocalsearch.com/mobiledirectory?mode=businesses&categories=216058"
+    var links: String = Constants.CouponURLs.CouponURL
     
     override func viewDidLoad() {
         super.viewDidLoad()

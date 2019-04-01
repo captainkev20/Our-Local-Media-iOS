@@ -9,9 +9,7 @@ class SportsWebPageViewController: UIViewController, UIWebViewDelegate {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        super.viewDidLoad()
-        
+                
         let myURL = URL(string: links)
         let myRequest = URLRequest(url: myURL!)
         self.automaticallyAdjustsScrollViewInsets = false

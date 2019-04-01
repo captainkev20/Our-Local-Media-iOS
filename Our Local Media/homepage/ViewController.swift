@@ -97,6 +97,10 @@ class ViewController: UIViewController,
                 let sportsViewController = storyboard?.instantiateViewController(withIdentifier: Constants.ViewControllerIdentifiers.SportsVC)
                 self.navigationController?.pushViewController(sportsViewController!, animated: true)
                 FIRAnalytics.logEvent(withName: Constants.FirebaseAnalyticsEvents.HomePageSportsCard, parameters: nil)
+            case 5:
+                let aboutViewController = storyboard?.instantiateViewController(withIdentifier: Constants.ViewControllerIdentifiers.AboutVC)
+                self.navigationController?.pushViewController(aboutViewController!, animated: true)
+                FIRAnalytics.logEvent(withName: Constants.FirebaseAnalyticsEvents.AboutUs, parameters: nil)
             default:
                 break
             }

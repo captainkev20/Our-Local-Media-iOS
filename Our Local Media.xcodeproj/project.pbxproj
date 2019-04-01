@@ -13,14 +13,13 @@
 		B09E93D620C0546D0015D802 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E93D520C0546D0015D802 /* CalendarCollectionViewCell.swift */; };
 		B09E93FC20C7B1E40015D802 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E93FB20C7B1E40015D802 /* CouponViewController.swift */; };
 		B09E943820C94E780015D802 /* TappedCraftedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943720C94E780015D802 /* TappedCraftedViewController.swift */; };
-		B09E943A20C951310015D802 /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943920C951310015D802 /* DirectoryViewController.swift */; };
-		B09E943C20C9580E0015D802 /* DirectoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943B20C9580E0015D802 /* DirectoryCollectionViewCell.swift */; };
-		B09E943E20C959800015D802 /* DirectoryWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943D20C959800015D802 /* DirectoryWebPageViewController.swift */; };
+		B09E943E20C959800015D802 /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943D20C959800015D802 /* DirectoryViewController.swift */; };
 		B09E944020CA0E590015D802 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943F20CA0E590015D802 /* SportsViewController.swift */; };
 		B09E944220CA10330015D802 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E944120CA10330015D802 /* SportsCollectionViewCell.swift */; };
 		B09E944420CA126F0015D802 /* SportsWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E944320CA126F0015D802 /* SportsWebPageViewController.swift */; };
 		B0AFA02220A944A6006C6BB9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFA02120A944A6006C6BB9 /* CalendarViewController.swift */; };
 		B0AFA04C20AE53C9006C6BB9 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFA04B20AE53C9006C6BB9 /* WebPageViewController.swift */; };
+		B0B50724224C6665005DB3D6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B50723224C6665005DB3D6 /* AboutViewController.swift */; };
 		B0BB3BF4218D814200E33467 /* CellViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3BF3218D814200E33467 /* CellViewHelper.swift */; };
 		B0BB3BF62191534F00E33467 /* CarouselWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3BF52191534F00E33467 /* CarouselWebPageViewController.swift */; };
 		B0BB3BF82192874100E33467 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0BB3BF72192874100E33467 /* GoogleService-Info.plist */; };
@@ -30,7 +29,6 @@
 		B0C5D6A1209973960090FB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D69F209973960090FB8A /* Main.storyboard */; };
 		B0C5D6A3209973980090FB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D6A2209973980090FB8A /* Assets.xcassets */; };
 		B0C5D6A6209973980090FB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D6A4209973980090FB8A /* LaunchScreen.storyboard */; };
-		B0C5D6B0209B6B500090FB8A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5D6AF209B6B500090FB8A /* CardView.swift */; };
 		B0C5D6B4209E0BDF0090FB8A /* our_local_font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D6B3209E0B310090FB8A /* our_local_font.ttf */; };
 		B0FB67972189413100B55930 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FB67952189413100B55930 /* iCarousel.m */; };
 		B0FB679A2189418400B55930 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FB67992189418400B55930 /* QuartzCore.framework */; };
@@ -45,14 +43,13 @@
 		B09E93D520C0546D0015D802 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		B09E93FB20C7B1E40015D802 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		B09E943720C94E780015D802 /* TappedCraftedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappedCraftedViewController.swift; sourceTree = "<group>"; };
-		B09E943920C951310015D802 /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
-		B09E943B20C9580E0015D802 /* DirectoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		B09E943D20C959800015D802 /* DirectoryWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryWebPageViewController.swift; sourceTree = "<group>"; };
+		B09E943D20C959800015D802 /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		B09E943F20CA0E590015D802 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
 		B09E944120CA10330015D802 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B09E944320CA126F0015D802 /* SportsWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsWebPageViewController.swift; sourceTree = "<group>"; };
 		B0AFA02120A944A6006C6BB9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B0AFA04B20AE53C9006C6BB9 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		B0B50723224C6665005DB3D6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B0BB3BF3218D814200E33467 /* CellViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewHelper.swift; sourceTree = "<group>"; };
 		B0BB3BF52191534F00E33467 /* CarouselWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselWebPageViewController.swift; sourceTree = "<group>"; };
 		B0BB3BF72192874100E33467 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		B0C5D6A2209973980090FB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C5D6A5209973980090FB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0C5D6A7209973980090FB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0C5D6AF209B6B500090FB8A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		B0C5D6B3209E0B310090FB8A /* our_local_font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = our_local_font.ttf; sourceTree = "<group>"; };
 		B0FB67942189413000B55930 /* Our Local Media-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Our Local Media-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0FB67952189413100B55930 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
@@ -137,9 +133,7 @@
 		B0AFA04920AE3E0F006C6BB9 /* directory */ = {
 			isa = PBXGroup;
 			children = (
-				B09E943920C951310015D802 /* DirectoryViewController.swift */,
-				B09E943B20C9580E0015D802 /* DirectoryCollectionViewCell.swift */,
-				B09E943D20C959800015D802 /* DirectoryWebPageViewController.swift */,
+				B09E943D20C959800015D802 /* DirectoryViewController.swift */,
 			);
 			path = directory;
 			sourceTree = "<group>";
@@ -152,6 +146,14 @@
 				B09E944320CA126F0015D802 /* SportsWebPageViewController.swift */,
 			);
 			path = sports;
+			sourceTree = "<group>";
+		};
+		B0B50722224C647F005DB3D6 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				B0B50723224C6665005DB3D6 /* AboutViewController.swift */,
+			);
+			path = about;
 			sourceTree = "<group>";
 		};
 		B0BB3BF2218D810200E33467 /* utils */ = {
@@ -190,6 +192,7 @@
 				B0BB3BFA2194F2CB00E33467 /* SwipeView.m */,
 				B0FB67962189413100B55930 /* iCarousel.h */,
 				B0FB67952189413100B55930 /* iCarousel.m */,
+				B0B50722224C647F005DB3D6 /* about */,
 				B0AFA04A20AE3E1A006C6BB9 /* sports */,
 				B0AFA04920AE3E0F006C6BB9 /* directory */,
 				B0AFA04820AE3DFE006C6BB9 /* tappedIntoCrafted */,
@@ -201,7 +204,6 @@
 				B0C5D6A2209973980090FB8A /* Assets.xcassets */,
 				B0C5D6A4209973980090FB8A /* LaunchScreen.storyboard */,
 				B0C5D6A7209973980090FB8A /* Info.plist */,
-				B0C5D6AF209B6B500090FB8A /* CardView.swift */,
 				B0C5D6B3209E0B310090FB8A /* our_local_font.ttf */,
 				B0FB67942189413000B55930 /* Our Local Media-Bridging-Header.h */,
 			);
@@ -354,14 +356,12 @@
 				B0C5D69E209973960090FB8A /* ViewController.swift in Sources */,
 				B0C5D69C209973960090FB8A /* AppDelegate.swift in Sources */,
 				B09E93D420BE16C20015D802 /* ViewCollectionViewCell.swift in Sources */,
-				B09E943C20C9580E0015D802 /* DirectoryCollectionViewCell.swift in Sources */,
 				B09E944420CA126F0015D802 /* SportsWebPageViewController.swift in Sources */,
-				B0C5D6B0209B6B500090FB8A /* CardView.swift in Sources */,
-				B09E943A20C951310015D802 /* DirectoryViewController.swift in Sources */,
-				B09E943E20C959800015D802 /* DirectoryWebPageViewController.swift in Sources */,
+				B09E943E20C959800015D802 /* DirectoryViewController.swift in Sources */,
 				B0BB3BF62191534F00E33467 /* CarouselWebPageViewController.swift in Sources */,
 				B09E944220CA10330015D802 /* SportsCollectionViewCell.swift in Sources */,
 				B0BB3BF4218D814200E33467 /* CellViewHelper.swift in Sources */,
+				B0B50724224C6665005DB3D6 /* AboutViewController.swift in Sources */,
 				B031AA01219FD9D500C414AE /* Constants.swift in Sources */,
 				B0FB67972189413100B55930 /* iCarousel.m in Sources */,
 				B0BB3BFB2194F2CB00E33467 /* SwipeView.m in Sources */,
