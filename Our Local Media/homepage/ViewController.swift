@@ -109,6 +109,22 @@ class ViewController: UIViewController,
         }
     }
     
+    // MARK: Determine color to be applied upon cell highlight
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+        cell?.backgroundColor = UIColor(white: 217.0/255.0, alpha: 1.0)
+    }
+    
+    // MARK: Determine color to be applied upon cell unhighlight
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+        cell?.backgroundColor = UIColor.white
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: self.collectionView.frame.width - 10, height: 100)
