@@ -5,7 +5,7 @@ use_frameworks!
 target 'Our Local Media' do
 # your other pod
 # ...
-  pod 'Kingfisher', '~> 5.0'
+  pod 'Kingfisher', '~> 5.5'
   pod 'Firebase'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
