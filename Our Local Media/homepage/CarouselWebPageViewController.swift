@@ -14,13 +14,10 @@ class CarouselWebPageViewController: UIViewController, UIWebViewDelegate {
         let myRequest = URLRequest(url: myURL!)
         self.automaticallyAdjustsScrollViewInsets = false
         CarouselWebView.loadRequest(myRequest)
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }

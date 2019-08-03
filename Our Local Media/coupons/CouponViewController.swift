@@ -14,13 +14,10 @@ class CouponViewController: UIViewController, UIWebViewDelegate {
         let myRequest = URLRequest(url: myURL!)
         couponWebView.loadRequest(myRequest)
         self.automaticallyAdjustsScrollViewInsets = false
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
