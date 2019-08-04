@@ -2,7 +2,7 @@ import UIKit
 import Kingfisher
 import Firebase
 
-class ViewController: UIViewController,
+class HomepageViewController: UIViewController,
     UICollectionViewDelegate,
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
@@ -57,7 +57,7 @@ class ViewController: UIViewController,
     // Create cells from prototype
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.HomePageCell, for: indexPath) as! ViewCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CellIdentifiers.HomePageCell, for: indexPath) as! HomepageCollectionViewCell
         
         cell.descriptionLabel.text? = homePageDescriptions[indexPath.row]
         cell.titleLabel.text = homePageTopics[indexPath.row]

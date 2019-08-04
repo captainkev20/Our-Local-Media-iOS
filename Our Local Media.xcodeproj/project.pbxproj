@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B0094255218BF9D70025DAD5 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0094254218BF9D70025DAD5 /* Kingfisher.framework */; };
 		B031AA01219FD9D500C414AE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031AA00219FD9D500C414AE /* Constants.swift */; };
-		B09E93D420BE16C20015D802 /* ViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E93D320BE16C20015D802 /* ViewCollectionViewCell.swift */; };
+		B09E93D420BE16C20015D802 /* HomepageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E93D320BE16C20015D802 /* HomepageCollectionViewCell.swift */; };
 		B09E93D620C0546D0015D802 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E93D520C0546D0015D802 /* CalendarCollectionViewCell.swift */; };
 		B09E93FC20C7B1E40015D802 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E93FB20C7B1E40015D802 /* CouponViewController.swift */; };
 		B09E943820C94E780015D802 /* TappedCraftedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E943720C94E780015D802 /* TappedCraftedViewController.swift */; };
@@ -18,14 +18,14 @@
 		B09E944220CA10330015D802 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E944120CA10330015D802 /* SportsCollectionViewCell.swift */; };
 		B09E944420CA126F0015D802 /* SportsWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E944320CA126F0015D802 /* SportsWebPageViewController.swift */; };
 		B0AFA02220A944A6006C6BB9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFA02120A944A6006C6BB9 /* CalendarViewController.swift */; };
-		B0AFA04C20AE53C9006C6BB9 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFA04B20AE53C9006C6BB9 /* WebPageViewController.swift */; };
+		B0AFA04C20AE53C9006C6BB9 /* CalendarWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AFA04B20AE53C9006C6BB9 /* CalendarWebPageViewController.swift */; };
 		B0B50724224C6665005DB3D6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B50723224C6665005DB3D6 /* AboutViewController.swift */; };
 		B0BB3BF4218D814200E33467 /* CellViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3BF3218D814200E33467 /* CellViewHelper.swift */; };
 		B0BB3BF62191534F00E33467 /* CarouselWebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3BF52191534F00E33467 /* CarouselWebPageViewController.swift */; };
 		B0BB3BF82192874100E33467 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0BB3BF72192874100E33467 /* GoogleService-Info.plist */; };
 		B0BB3BFB2194F2CB00E33467 /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BB3BFA2194F2CB00E33467 /* SwipeView.m */; };
 		B0C5D69C209973960090FB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5D69B209973960090FB8A /* AppDelegate.swift */; };
-		B0C5D69E209973960090FB8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5D69D209973960090FB8A /* ViewController.swift */; };
+		B0C5D69E209973960090FB8A /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5D69D209973960090FB8A /* HomepageViewController.swift */; };
 		B0C5D6A1209973960090FB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D69F209973960090FB8A /* Main.storyboard */; };
 		B0C5D6A3209973980090FB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D6A2209973980090FB8A /* Assets.xcassets */; };
 		B0C5D6A6209973980090FB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C5D6A4209973980090FB8A /* LaunchScreen.storyboard */; };
@@ -49,7 +49,7 @@
 		6CCD31EF196142944F92ADD6 /* Pods-Our Local Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Our Local Media.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Our Local Media/Pods-Our Local Media.debug.xcconfig"; sourceTree = "<group>"; };
 		B0094254218BF9D70025DAD5 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B031AA00219FD9D500C414AE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B09E93D320BE16C20015D802 /* ViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		B09E93D320BE16C20015D802 /* HomepageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageCollectionViewCell.swift; sourceTree = "<group>"; };
 		B09E93D520C0546D0015D802 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		B09E93FB20C7B1E40015D802 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		B09E943720C94E780015D802 /* TappedCraftedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappedCraftedViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		B09E944120CA10330015D802 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B09E944320CA126F0015D802 /* SportsWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsWebPageViewController.swift; sourceTree = "<group>"; };
 		B0AFA02120A944A6006C6BB9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		B0AFA04B20AE53C9006C6BB9 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		B0AFA04B20AE53C9006C6BB9 /* CalendarWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWebPageViewController.swift; sourceTree = "<group>"; };
 		B0B50723224C6665005DB3D6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B0BB3BF3218D814200E33467 /* CellViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewHelper.swift; sourceTree = "<group>"; };
 		B0BB3BF52191534F00E33467 /* CarouselWebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselWebPageViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		B0BB3BFA2194F2CB00E33467 /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
 		B0C5D698209973960090FB8A /* Our Local Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Our Local Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C5D69B209973960090FB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0C5D69D209973960090FB8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0C5D69D209973960090FB8A /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		B0C5D6A0209973960090FB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0C5D6A2209973980090FB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C5D6A5209973980090FB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B0AFA02120A944A6006C6BB9 /* CalendarViewController.swift */,
-				B0AFA04B20AE53C9006C6BB9 /* WebPageViewController.swift */,
+				B0AFA04B20AE53C9006C6BB9 /* CalendarWebPageViewController.swift */,
 				B09E93D520C0546D0015D802 /* CalendarCollectionViewCell.swift */,
 			);
 			path = calendar;
@@ -126,8 +126,8 @@
 		B0AFA04620AE3DE4006C6BB9 /* homepage */ = {
 			isa = PBXGroup;
 			children = (
-				B0C5D69D209973960090FB8A /* ViewController.swift */,
-				B09E93D320BE16C20015D802 /* ViewCollectionViewCell.swift */,
+				B0C5D69D209973960090FB8A /* HomepageViewController.swift */,
+				B09E93D320BE16C20015D802 /* HomepageCollectionViewCell.swift */,
 				B0BB3BF52191534F00E33467 /* CarouselWebPageViewController.swift */,
 			);
 			path = homepage;
@@ -412,9 +412,9 @@
 				B0AFA02220A944A6006C6BB9 /* CalendarViewController.swift in Sources */,
 				B09E943820C94E780015D802 /* TappedCraftedViewController.swift in Sources */,
 				B09E93D620C0546D0015D802 /* CalendarCollectionViewCell.swift in Sources */,
-				B0C5D69E209973960090FB8A /* ViewController.swift in Sources */,
+				B0C5D69E209973960090FB8A /* HomepageViewController.swift in Sources */,
 				B0C5D69C209973960090FB8A /* AppDelegate.swift in Sources */,
-				B09E93D420BE16C20015D802 /* ViewCollectionViewCell.swift in Sources */,
+				B09E93D420BE16C20015D802 /* HomepageCollectionViewCell.swift in Sources */,
 				B09E944420CA126F0015D802 /* SportsWebPageViewController.swift in Sources */,
 				B09E943E20C959800015D802 /* DirectoryViewController.swift in Sources */,
 				B0BB3BF62191534F00E33467 /* CarouselWebPageViewController.swift in Sources */,
@@ -424,7 +424,7 @@
 				B031AA01219FD9D500C414AE /* Constants.swift in Sources */,
 				B0FB67972189413100B55930 /* iCarousel.m in Sources */,
 				B0BB3BFB2194F2CB00E33467 /* SwipeView.m in Sources */,
-				B0AFA04C20AE53C9006C6BB9 /* WebPageViewController.swift in Sources */,
+				B0AFA04C20AE53C9006C6BB9 /* CalendarWebPageViewController.swift in Sources */,
 				B09E944020CA0E590015D802 /* SportsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

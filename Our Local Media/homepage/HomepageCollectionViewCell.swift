@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewCollectionViewCell: UICollectionViewCell {
+class HomepageCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var iconLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

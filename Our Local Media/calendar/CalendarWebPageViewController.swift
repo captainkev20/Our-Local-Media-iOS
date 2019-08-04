@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class WebPageViewController: UIViewController, UIWebViewDelegate {
+class CalendarWebPageViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var calendarWebView: UIWebView!
     

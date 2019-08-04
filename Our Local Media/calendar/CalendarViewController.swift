@@ -69,7 +69,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.SegueIdentifiers.CalendarWebViewSegue {
             if let indexPath = collectionView?.indexPathsForSelectedItems?.first {
-                let destination = segue.destination as? WebPageViewController
+                let destination = segue.destination as? CalendarWebPageViewController
                 destination?.links = calendarLinks[indexPath.row]
             }
         }
