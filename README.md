@@ -14,3 +14,9 @@ Google Analytics.
 * Swift 4
 * Google Analytics
 * Kingfisher (image processing)
+
+# Screenshots
+
+![image](https://user-images.githubusercontent.com/22580767/90288490-fbfe1b00-de47-11ea-95eb-920c4906e2aa.png)
+
+![image](https://user-images.githubusercontent.com/22580767/90288504-015b6580-de48-11ea-98b7-9f0f6425fe69.png)
