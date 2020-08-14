@@ -6,7 +6,7 @@ Mobile app for Our Local Media - to serve as a way to quickly serve business ads
 
 # Features
 
-Users are able to see promos in their area based on their location. This is served via a WebView in iOS. User activity on each section of the app is tracked through 
+Users are able to see promos in their area based on their location. This is served via a WebView in iOS. For simplicity, the business owner can control which images are shown on the homescreen by swapping out the images on their backend. User activity on each section of the app is tracked through 
 Google Analytics.
 
 # Stack
