@@ -2,7 +2,7 @@
 
 # Purpose
 
-Mobile app for Our Local Media - to serve as a way to quickly serve business ads and promotions to customers.
+Mobile app for Our Local Media. Provides business value by quickly allowing the business to serve ads and promotions to customers.
 
 # Features
 
